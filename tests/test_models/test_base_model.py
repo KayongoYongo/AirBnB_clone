@@ -23,7 +23,7 @@ class TestBaseModel(unittest.TestCase):
         del cls.testBase
         try:
             os.remove("file.json")
-        except:
+        except IOError:
             pass
 
     def test_pep8_basemodel(self):
@@ -60,4 +60,3 @@ class TestBaseModel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
