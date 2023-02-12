@@ -103,6 +103,28 @@ class HBNBCommand(cmd.Cmd):
         """Splits a line"""
         return arg.split()
 
+    def my_obj(my_line):
+        """returns key of an object"""
+
+        my_list = parse(my_line)
+        if len(my_list) == 0:
+            print("** class name missing **")
+        elif len(my_list) == 1:
+            if my_list[0] not in HBNBCommand.class_dict:
+                print("** class doesn't exist **")
+            else:
+                print("** instance id missing **")
+        elif len(my_list) >= 2:
+            if my_list[0] not in HBNBCommand.class_dict:
+                print("** class doesn't exist **")
+            else:
+                key = f"{my_list[0]}.{my_list[1]}"
+                file_dict = storage.all()
+                if key in file_dict:
+                    return key
+                else:
+                    print("** no instance found **")
+
     def do_quit(self, arg):
         """Quit command to exit the program"""
         return True
