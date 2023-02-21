@@ -1,3 +1,6 @@
+/*The filter class is used to style the position of a button
+in the container*/
+
 .filters{
     background-color: white;
     height: 70px;
@@ -9,6 +12,7 @@
     text-align: right;
 }
 
+/*This class is used to style the appeaance of the button*/
 section.filters button{
     font-size: 18px;
     background-color:#FF5A5F;
