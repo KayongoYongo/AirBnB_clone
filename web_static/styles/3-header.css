@@ -1,5 +1,9 @@
 header{
     background-image: url('../images/logo.png');
+    /*By default, a background image is placed at the top left
+    corner of an element. It is also repeated both vertically 
+    and horizontally by default. To sort out this issue, 
+    background repeat is set to no repeat.*/
     background-repeat: no-repeat;
     background-color: white;
     height: 70px;
