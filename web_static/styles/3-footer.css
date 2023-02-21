@@ -2,10 +2,14 @@ footer{
     background-color: white;
     height: 60px;
     width: 100%;
+    /*The following will position the footer
+    at the bottom of the page*/
     bottom: 0;
     position: fixed;
+    /*This element is responsible for a border*/
     border-top: 1px solid #cccccc;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    /*The following elements are responsible for alignment.*/
+    display: flex;/*This will introduce a concept of a flex box*/
+    align-items: center;/*This will center items vertically*/
+    justify-content: center;/*This will center elements horizontally*/
 }
