@@ -6,6 +6,8 @@ body {
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/*This class within the div tags affects how far the searchbox section
+should be from the header*/
 .container{
     margin: auto;
     max-width: 1000px;
